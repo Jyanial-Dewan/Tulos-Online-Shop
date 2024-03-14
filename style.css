@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.navbar{
+    background: black;
+    color: white;
+}
+
+.navbar .container{
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0.5rem;
+}
+
+.navbar img{
+    width: 2.5rem;
+    cursor: pointer;
+}
+
+.navbar img:hover{
+    scale: 1.1;
+}
+
+/*banner*/
+
+.banner{
+    height: 500px;
+    width: 100%;
+    margin: 0 auto;
+    background:  linear-gradient(
+        to right,
+        rgba(39,39,39,0.4),
+        rgba(39,39,39,0.4)
+    ), url("./image/banner-1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.banner .container,
+.shop-banner .container,
+.men-banner .container,
+.women-banner .container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.banner .container .tulos,
+.shop-banner .container .tulos,
+.men-banner .container .tulos,
+.women-banner .container .tulos{
+    margin-bottom: 2rem;
+    color: white;
+    max-width: 65%;
+}
+
+.banner .container a,
+.shop-banner .container a,
+.men-banner .container a,
+.women-banner .container a{
+    margin-bottom: 2rem;
+    color: black;
+}
+
+.banner .container a:hover,
+.shop-banner .container a:hover,
+.men-banner .container a:hover,
+.women-banner .container a:hover{
+    scale: 1.1;
+}
+
+.shop-banner{
+    height: 500px;
+    width: 100%;
+    margin: 0 auto;
+    background:  linear-gradient(
+        to right,
+        rgba(39,39,39,0.5),
+        rgba(39,39,39,0.5)
+    ), url("./image/shop\ online.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.men-banner{
+    height: 500px;
+    width: 100%;
+    margin: 0 auto;
+    background:  linear-gradient(
+        to right,
+        rgba(39,39,39,0.6),
+        rgba(39,39,39,0.6)
+    ), url("./image/men-banner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.women-banner{
+    height: 500px;
+    width: 100%;
+    margin: 0 auto;
+    background:  linear-gradient(
+        to right,
+        rgba(39,39,39,0.6),
+        rgba(39,39,39,0.6)
+    ), url("./image/shop-banner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*products*/
+
+.products-container,
+.men-container,
+.women-container{
+    padding: 30px;
+    background: rgb(206, 206, 206);
+}
+
+.products-container h1{
+    margin-bottom: 20px;
+}
+
+.products{
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.shop-products,
+.men-products,
+.women-products{
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product{
+    flex-grow: 1;
+    background: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product img{
+    width: 200px;
+    height: 250px;
+    margin-bottom: 10px;
+}
+
+.product p{
+    width: 200px;
+}
+
+.product-cart{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+.product-cart i{
+    cursor: pointer;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.productt{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.productt img{
+    width: 350px;
+    height: 450px;
+}
+
+.productt p{
+    max-width: 350px;
+}
+
+.product p{
+    max-width: 200px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+/*contact-form*/
+
+
+.contact-form{
+    padding: 30px;
+    
+}
+
+.contact-form .container{
+    display: flex;
+    justify-content: center;
+}
+
+.contact-form form{
+    background: rgb(206, 206, 206);
+    width: 400px;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+.contact-form form input,
+.contact-form form textarea{
+    width: 100%;
+}
+
+.contact-form form input:focus,
+.contact-form form textarea:focus{
+    outline: none;
+}
+
+/*footer*/
+
+footer{
+    padding: 10px 0 30px;
+    background: black;
+    color: white;
+}
+
+footer .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .footer-elements{
+    display: flex;
+    gap: 30px;
+}
+
+footer .footer-elements p{
+    margin-bottom: 1rem;
+    
+}
+
+footer .footer-elements li{
+    margin-bottom: 6px;
+    
+}
+
+footer .footer-elements li a{
+    color: white;
+}
+
+
+/*Media Query*/
+
+@media  screen and (max-width: 800px){
+    footer .container{
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+}
+    
